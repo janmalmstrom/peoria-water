@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://peoriawaterdamage.net/sitemap.xml
