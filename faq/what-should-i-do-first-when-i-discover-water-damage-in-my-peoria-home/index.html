@@ -161,7 +161,11 @@
   <form action='https://media.simaroa.com/api/media/leads' method='POST' class='quick-lead-form'>
     <input type='text' name='name' placeholder='Your name' required>
     <input type='tel' name='phone' placeholder='(309) 555-0100' required>
-    <input type='hidden' name='site' value='peoria-water'>
+            <div class='form-group'>
+          <label>Additional Details</label>
+          <textarea name='message' placeholder='Type of damage, address, urgency, etc.' style='width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:.95rem;min-height:80px;resize:vertical;'></textarea>
+        </div>
+<input type='hidden' name='site' value='peoria-water'>
     <button type='submit'>Get Free Estimate &rarr;</button>
   </form>
 </div>
