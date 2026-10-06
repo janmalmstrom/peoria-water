@@ -296,6 +296,15 @@ article li { margin-bottom: .4rem; }
 .faq-header { margin-bottom: 1.5rem; }
 .faq-category { font-size: .78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--orange); margin-bottom: .4rem; }
 
+
+/* ── FAQ Card Grid ─────────────────────────────────────── */
+.faq-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.faq-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; transition: box-shadow .2s, transform .2s; display: flex; flex-direction: column; gap: 8px; }
+.faq-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); transform: translateY(-2px); }
+.faq-card-cat { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--orange); }
+.faq-card a { font-size: .95rem; font-weight: 600; color: var(--dark); text-decoration: none; line-height: 1.4; }
+.faq-card a:hover { color: var(--orange); }
+
 /* ── Responsive ────────────────────────────────────────── */
 @media (max-width: 768px) {
   .contact-layout { grid-template-columns: 1fr; }
