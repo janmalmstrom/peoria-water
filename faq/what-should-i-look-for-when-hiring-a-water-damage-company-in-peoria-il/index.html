@@ -153,7 +153,11 @@ Fact-check:
       <form action="https://media.simaroa.com/api/media/leads" method="POST" class="quick-lead-form">
         <input type="text" name="name" placeholder="Your name" required style="display:block;width:100%;padding:10px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;">
         <input type="tel" name="phone" placeholder="(309) 555-0100" required style="display:block;width:100%;padding:10px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;">
-        <input type="hidden" name="site" value="peoria-water">
+                <div style="margin-bottom:16px;">
+          <label style="display:block;font-size:.875rem;font-weight:600;color:#374151;margin-bottom:6px;">Additional Details</label>
+          <textarea id="fq-message" name="message" placeholder="Type of damage, address, urgency, etc." style="width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:6px;font-size:.95rem;min-height:80px;resize:vertical;"></textarea>
+        </div>
+<input type="hidden" name="site" value="peoria-water">
         <button type="submit" style="background:#0ea5e9;color:#fff;border:none;padding:12px 24px;border-radius:6px;font-weight:600;cursor:pointer;">Get Free Estimate &rarr;</button>
       </form>
     </div>
