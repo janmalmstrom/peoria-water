@@ -1,1 +1,395 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CiAgPG1ldGEgY2hhcnNldD0iVVRGLTgiPgogIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIj4KICA8dGl0bGU+UGVvcmlhIFdhdGVyIERhbWFnZSBSZXN0b3JhdGlvbiB8IDI0LzcgRmxvb2QgQ2xlYW51cCDigJQgSUlDUkMgQ2VydGlmaWVkPC90aXRsZT4KICA8bWV0YSBuYW1lPSJkZXNjcmlwdGlvbiIgY29udGVudD0iMjQvNyB3YXRlciBkYW1hZ2UgcmVzdG9yYXRpb24gaW4gUGVvcmlhLCBJTC4gSUlDUkMgY2VydGlmaWVkLCBpbnN1cmFuY2UgYXBwcm92ZWQsIHNhbWUtZGF5IHJlc3BvbnNlLiBGbG9vZCBjbGVhbnVwLCB3YXRlciBleHRyYWN0aW9uLCBzdHJ1Y3R1cmFsIGRyeWluZy4gQ2FsbCAoMzA5KSA1NTUtMDEwMC4iPgogIDxsaW5rIHJlbD0iY2Fub25pY2FsIiBocmVmPSJodHRwczovL3Blb3JpYXdhdGVyZGFtYWdlLm5ldC8iPgogIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0ic3R5bGUuY3NzIj4KCiAgPCEtLSBPcGVuIEdyYXBoIC0tPgogIDxtZXRhIHByb3BlcnR5PSJvZzp0aXRsZSIgY29udGVudD0iUGVvcmlhIFdhdGVyIERhbWFnZSBSZXN0b3JhdGlvbiB8IDI0LzcgRW1lcmdlbmN5IFJlc3BvbnNlIj4KICA8bWV0YSBwcm9wZXJ0eT0ib2c6ZGVzY3JpcHRpb24iIGNvbnRlbnQ9IklJQ1JDIGNlcnRpZmllZCB3YXRlciBkYW1hZ2UgcmVzdG9yYXRpb24gaW4gUGVvcmlhLCBJTC4gU2FtZS1kYXkgcmVzcG9uc2UuIEluc3VyYW5jZSBhcHByb3ZlZC4gQ2FsbCAoMzA5KSA1NTUtMDEwMC4iPgogIDxtZXRhIHByb3BlcnR5PSJvZzp1cmwiIGNvbnRlbnQ9Imh0dHBzOi8vcGVvcmlhd2F0ZXJkYW1hZ2UubmV0LyI+CiAgPG1ldGEgcHJvcGVydHk9Im9nOnR5cGUiIGNvbnRlbnQ9IndlYnNpdGUiPgoKICA8IS0tIFNjaGVtYTogTG9jYWxCdXNpbmVzcyAtLT4KICA8c2NyaXB0IHR5cGU9ImFwcGxpY2F0aW9uL2xkK2pzb24iPgogIHsKICAgICJAY29udGV4dCI6ICJodHRwczovL3NjaGVtYS5vcmciLAogICAgIkB0eXBlIjogIkhvbWVBbmRDb25zdHJ1Y3Rpb25CdXNpbmVzcyIsCiAgICAibmFtZSI6ICJQZW9yaWEgV2F0ZXIgRGFtYWdlIFJlc3RvcmF0aW9uIiwKICAgICJ1cmwiOiAiaHR0cHM6Ly9wZW9yaWF3YXRlcmRhbWFnZS5uZXQiLAogICAgInRlbGVwaG9uZSI6ICIoMzA5KSA1NTUtMDEwMCIsCiAgICAicHJpY2VSYW5nZSI6ICIkJCQiLAogICAgIm9wZW5pbmdIb3VycyI6ICJNby1TdSAwMDowMC0yNDowMCIsCiAgICAiYXJlYVNlcnZlZCI6IFsKICAgICAgeyAiQHR5cGUiOiAiQ2l0eSIsICJuYW1lIjogIlBlb3JpYSIgfSwKICAgICAgeyAiQHR5cGUiOiAiQ2l0eSIsICJuYW1lIjogIkVhc3QgUGVvcmlhIiB9LAogICAgICB7ICJAdHlwZSI6ICJDaXR5IiwgIm5hbWUiOiAiUGVraW4iIH0sCiAgICAgIHsgIkB0eXBlIjogIkNpdHkiLCAibmFtZSI6ICJNb3J0b24iIH0sCiAgICAgIHsgIkB0eXBlIjogIkNpdHkiLCAibmFtZSI6ICJDaGlsbGljb3RoZSIgfSwKICAgICAgeyAiQHR5cGUiOiAiQ2l0eSIsICJuYW1lIjogIkR1bmxhcCIgfQogICAgXSwKICAgICJhZGRyZXNzIjogewogICAgICAiQHR5cGUiOiAiUG9zdGFsQWRkcmVzcyIsCiAgICAgICJhZGRyZXNzTG9jYWxpdHkiOiAiUGVvcmlhIiwKICAgICAgImFkZHJlc3NSZWdpb24iOiAiSUwiLAogICAgICAiYWRkcmVzc0NvdW50cnkiOiAiVVMiCiAgICB9LAogICAgImRlc2NyaXB0aW9uIjogIjI0Lzcgd2F0ZXIgZGFtYWdlIHJlc3RvcmF0aW9uIGluIFBlb3JpYSwgSUwuIElJQ1JDIGNlcnRpZmllZCB0ZWNobmljaWFucy4gRmxvb2QgY2xlYW51cCwgd2F0ZXIgZXh0cmFjdGlvbiwgc3RydWN0dXJhbCBkcnlpbmcsIG1vbGQgcmVtZWRpYXRpb24uIEluc3VyYW5jZSBhcHByb3ZlZC4iLAogICAgImhhc09mZmVyQ2F0YWxvZyI6IHsKICAgICAgIkB0eXBlIjogIk9mZmVyQ2F0YWxvZyIsCiAgICAgICJuYW1lIjogIldhdGVyIERhbWFnZSBSZXN0b3JhdGlvbiBTZXJ2aWNlcyIsCiAgICAgICJpdGVtTGlzdEVsZW1lbnQiOiBbCiAgICAgICAgeyAiQHR5cGUiOiAiT2ZmZXIiLCAiaXRlbU9mZmVyZWQiOiB7ICJAdHlwZSI6ICJTZXJ2aWNlIiwgIm5hbWUiOiAiV2F0ZXIgRGFtYWdlIFJlc3RvcmF0aW9uIiB9IH0sCiAgICAgICAgeyAiQHR5cGUiOiAiT2ZmZXIiLCAiaXRlbU9mZmVyZWQiOiB7ICJAdHlwZSI6ICJTZXJ2aWNlIiwgIm5hbWUiOiAiRmxvb2QgRGFtYWdlIENsZWFudXAiIH0gfSwKICAgICAgICB7ICJAdHlwZSI6ICJPZmZlciIsICJpdGVtT2ZmZXJlZCI6IHsgIkB0eXBlIjogIlNlcnZpY2UiLCAibmFtZSI6ICJXYXRlciBFeHRyYWN0aW9uIiB9IH0sCiAgICAgICAgeyAiQHR5cGUiOiAiT2ZmZXIiLCAiaXRlbU9mZmVyZWQiOiB7ICJAdHlwZSI6ICJTZXJ2aWNlIiwgIm5hbWUiOiAiU3RydWN0dXJhbCBEcnlpbmciIH0gfSwKICAgICAgICB7ICJAdHlwZSI6ICJPZmZlciIsICJpdGVtT2ZmZXJlZCI6IHsgIkB0eXBlIjogIlNlcnZpY2UiLCAibmFtZSI6ICJTZXdhZ2UgQ2xlYW51cCIgfSB9LAogICAgICAgIHsgIkB0eXBlIjogIk9mZmVyIiwgIml0ZW1PZmZlcmVkIjogeyAiQHR5cGUiOiAiU2VydmljZSIsICJuYW1lIjogIk1vbGQgUmVtZWRpYXRpb24iIH0gfSwKICAgICAgICB7ICJAdHlwZSI6ICJPZmZlciIsICJpdGVtT2ZmZXJlZCI6IHsgIkB0eXBlIjogIlNlcnZpY2UiLCAibmFtZSI6ICJDb21tZXJjaWFsIFdhdGVyIERhbWFnZSIgfSB9LAogICAgICAgIHsgIkB0eXBlIjogIk9mZmVyIiwgIml0ZW1PZmZlcmVkIjogeyAiQHR5cGUiOiAiU2VydmljZSIsICJuYW1lIjogIkluc3VyYW5jZSBDbGFpbSBBc3Npc3RhbmNlIiB9IH0KICAgICAgXQogICAgfQogIH0KICA8L3NjcmlwdD4KICA8IS0tIEdBNCBwbGFjZWhvbGRlciDigJQgcmVwbGFjZSBHLVhYWFhYWFhYWFggd2l0aCByZWFsIElEIC0tPgogIDxzY3JpcHQgYXN5bmMgc3JjPSJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ndGFnL2pzP2lkPUctWFhYWFhYWFhYWCI+PC9zY3JpcHQ+CiAgPHNjcmlwdD4KICAgIHdpbmRvdy5kYXRhTGF5ZXIgPSB3aW5kb3cuZGF0YUxheWVyIHx8IFtdOwogICAgZnVuY3Rpb24gZ3RhZygpe2RhdGFMYXllci5wdXNoKGFyZ3VtZW50cyk7fQogICAgZ3RhZygnanMnLCBuZXcgRGF0ZSgpKTsKICAgIGd0YWcoJ2NvbmZpZycsICdHLVhYWFhYWFhYWFgnKTsKICA8L3NjcmlwdD4KPC9oZWFkPgo8Ym9keT4KCjwhLS0gRW1lcmdlbmN5IGJhciAtLT4KPGRpdiBjbGFzcz0iZW1lcmdlbmN5LWJhciI+CiAgJiMxMjg2ODA7IFdhdGVyIGRhbWFnZSBlbWVyZ2VuY3k/IENhbGwgPGEgaHJlZj0idGVsOjMwOTU1NTAxMDAiPigzMDkpIDU1NS0wMTAwPC9hPiDigJQgMjQvNywgaW5jbHVkaW5nIHdlZWtlbmRzICZhbXA7IGhvbGlkYXlzCjwvZGl2PgoKPCEtLSBIZWFkZXIgLS0+CjxoZWFkZXIgY2xhc3M9InNpdGUtaGVhZGVyIj4KICA8ZGl2IGNsYXNzPSJsb2dvIj5QZW9yaWEgPHNwYW4+V2F0ZXIgRGFtYWdlPC9zcGFuPjwvZGl2PgogIDxhIGhyZWY9InRlbDozMDk1NTUwMTAwIiBjbGFzcz0iaGVhZGVyLXBob25lIj4mIzEyODIyMjsgKDMwOSkgNTU1LTAxMDA8L2E+CjwvaGVhZGVyPgo8bmF2PgogIDxhIGhyZWY9Ii8iIGNsYXNzPSJhY3RpdmUiPkhvbWU8L2E+CiAgPGEgaHJlZj0iL3NlcnZpY2VzLmh0bWwiPlNlcnZpY2VzPC9hPgogIDxhIGhyZWY9Ii9mYXEvIj5GQVE8L2E+CiAgPGEgaHJlZj0iL2NvbnRhY3QuaHRtbCI+RnJlZSBFc3RpbWF0ZTwvYT4KPC9uYXY+Cgo8IS0tIEhlcm8gLS0+CjxzZWN0aW9uIGNsYXNzPSJoZXJvIj4KICA8ZGl2IGNsYXNzPSJoZXJvLWJhZGdlIj5QZW9yaWEsIElMIOKAlCAyNC83IEVtZXJnZW5jeSBSZXNwb25zZTwvZGl2PgogIDxoMT5XYXRlciBEYW1hZ2UgUmVzdG9yYXRpb248YnI+PHNwYW4+UGVvcmlhLCBJbGxpbm9pczwvc3Bhbj48L2gxPgogIDxwIGNsYXNzPSJoZXJvLXN1YiI+SUlDUkMgY2VydGlmaWVkIHRlY2huaWNpYW5zLiBTYW1lLWRheSByZXNwb25zZS4gSW5zdXJhbmNlIGFwcHJvdmVkLiBDb250cmFjdG9ycyBleHRyYWN0IHdhdGVyLCBkcnkgc3RydWN0dXJlcyB0byBJSUNSQyBTNTAwIHN0YW5kYXJkLCBhbmQgZG9jdW1lbnQgZXZlcnl0aGluZyB5b3VyIGFkanVzdGVyIG5lZWRzLjwvcD4KICA8ZGl2PgogICAgPGEgaHJlZj0idGVsOjMwOTU1NTAxMDAiIGNsYXNzPSJidG4tcHJpbWFyeSI+JiMxMjg2ODA7IENhbGwgKDMwOSkgNTU1LTAxMDAg4oCUIDI0Lzc8L2E+CiAgICA8YSBocmVmPSIvY29udGFjdC5odG1sIiBjbGFzcz0iYnRuLXNlY29uZGFyeSI+RnJlZSBFc3RpbWF0ZSAmcmFycjs8L2E+CiAgPC9kaXY+CiAgPGRpdiBjbGFzcz0iaGVyby10cnVzdCI+CiAgICA8c3Bhbj5JSUNSQyBDZXJ0aWZpZWQ8L3NwYW4+CiAgICA8c3Bhbj5JbnN1cmFuY2UgQXBwcm92ZWQ8L3NwYW4+CiAgICA8c3Bhbj5MaWNlbnNlZCAmYW1wOyBJbnN1cmVkPC9zcGFuPgogICAgPHNwYW4+U2FtZS1EYXkgUmVzcG9uc2U8L3NwYW4+CiAgICA8c3Bhbj5GcmVlIEVzdGltYXRlPC9zcGFuPgogIDwvZGl2Pgo8L3NlY3Rpb24+Cgo8IS0tIFRydXN0IHN0cmlwIC0tPgo8ZGl2IGNsYXNzPSJ0cnVzdC1zdHJpcCI+CiAgPGRpdiBjbGFzcz0idHJ1c3QtaXRlbSI+CiAgICA8ZGl2IGNsYXNzPSJudW0iPjI0Lzc8L2Rpdj4KICAgIDxkaXYgY2xhc3M9ImxhYmVsIj5FbWVyZ2VuY3kgUmVzcG9uc2Ug4oCUIDM2NSBEYXlzL1llYXI8L2Rpdj4KICA8L2Rpdj4KICA8ZGl2IGNsYXNzPSJ0cnVzdC1pdGVtIj4KICAgIDxkaXYgY2xhc3M9Im51bSI+MjQmbmRhc2g7NDBoPC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJsYWJlbCI+TW9sZCBDYW4gQmVnaW4gR3Jvd2luZyDigJQgRmFzdCBBY3Rpb24gTWF0dGVyczwvZGl2PgogIDwvZGl2PgogIDxkaXYgY2xhc3M9InRydXN0LWl0ZW0iPgogICAgPGRpdiBjbGFzcz0ibnVtIj5JSUNSQzwvZGl2PgogICAgPGRpdiBjbGFzcz0ibGFiZWwiPkNlcnRpZmllZCBUZWNobmljaWFucyDigJQgSW5kdXN0cnkgU3RhbmRhcmQ8L2Rpdj4KICA8L2Rpdj4KICA8ZGl2IGNsYXNzPSJ0cnVzdC1pdGVtIj4KICAgIDxkaXYgY2xhc3M9Im51bSI+JDA8L2Rpdj4KICAgIDxkaXYgY2xhc3M9ImxhYmVsIj5Pbi1TaXRlIEVzdGltYXRlIHdpdGggTW9pc3R1cmUgUmVhZGluZ3M8L2Rpdj4KICA8L2Rpdj4KPC9kaXY+Cgo8IS0tIFNlcnZpY2VzIC0tPgo8c2VjdGlvbiBjbGFzcz0ic2VjdGlvbiBzZWN0aW9uLWdyYXkiPgogIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+CiAgICA8ZGl2IGNsYXNzPSJzZWN0aW9uLWxhYmVsIj5XaGF0IFdlIERvPC9kaXY+CiAgICA8aDIgY2xhc3M9InNlY3Rpb24tdGl0bGUiPldhdGVyIERhbWFnZSBSZXN0b3JhdGlvbiBTZXJ2aWNlcyDigJQgUGVvcmlhLCBJTDwvaDI+CiAgICA8cCBjbGFzcz0ic2VjdGlvbi1ib2R5Ij5CdXJzdCBwaXBlIGF0IDJhbSBpbiBKYW51YXJ5LiBCYXNlbWVudCBmbG9vZCBmcm9tIHNwcmluZyBzbm93bWVsdC4gU2V3YWdlIGJhY2t1cCB0aHJvdWdoIHRoZSBmbG9vciBkcmFpbi4gRXZlcnkgc2l0dWF0aW9uIGlzIGRpZmZlcmVudCDigJQgaGVyZSBpcyB3aGF0IHRoZSBjb250cmFjdG9ycyB3ZSBjb25uZWN0IHlvdSB3aXRoIGhhbmRsZS48L3A+CgogICAgPGRpdiBjbGFzcz0iY29uZGl0aW9ucy1ncmlkIj4KICAgICAgPGRpdiBjbGFzcz0iY29uZGl0aW9uLWNhcmQiPgogICAgICAgIDxoMz5XYXRlciBFeHRyYWN0aW9uPC9oMz4KICAgICAgICA8cD5UcnVjay1tb3VudGVkIGV4dHJhY3Rpb24gdW5pdHMgcmVtb3ZlIHN0YW5kaW5nIHdhdGVyLCB3YXRlciB0cmFwcGVkIGluIGNhcnBldCBhbmQgcGFkLCBhbmQgc3VyZmFjZSB3YXRlciBmcm9tIGhhcmQgZmxvb3JzLiBGYXIgbW9yZSBwb3dlcmZ1bCB0aGFuIGFueSBjb25zdW1lciBlcXVpcG1lbnQuIENvbnRyYWN0b3JzIGZvbGxvdyB3aXRoIHRoZXJtYWwgaW1hZ2luZyB0byBmaW5kIGhpZGRlbiBtb2lzdHVyZSBpbiB3YWxsIGNhdml0aWVzIGJlZm9yZSBkcnlpbmcgYmVnaW5zLjwvcD4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9ImNvbmRpdGlvbi1jYXJkIj4KICAgICAgICA8aDM+U3RydWN0dXJhbCBEcnlpbmc8L2gzPgogICAgICAgIDxwPkluZHVzdHJpYWwgZGVodW1pZGlmaWVycyBhbmQgaGlnaC12ZWxvY2l0eSBhaXIgbW92ZXJzIHBsYWNlZCBwZXIgSUlDUkMgUzUwMCBwc3ljaHJvbWV0cmljIGNhbGN1bGF0aW9ucy4gRGFpbHkgbW9pc3R1cmUgcmVhZGluZ3MgZG9jdW1lbnRlZCBhdCBtYXBwZWQgcG9pbnRzLiBEcnlpbmcgY29udGludWVzIHVudGlsIG1hdGVyaWFscyByZWFjaCB0YXJnZXQgbW9pc3R1cmUgY29udGVudCDigJQgaW5jb21wbGV0ZSBkcnlpbmcgY2F1c2VzIG1vbGQuPC9wPgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0iY29uZGl0aW9uLWNhcmQiPgogICAgICAgIDxoMz5CYXNlbWVudCBGbG9vZGluZyBDbGVhbnVwPC9oMz4KICAgICAgICA8cD5QZW9yaWEgYmFzZW1lbnRzIGZsb29kIGZyb20gc3ByaW5nIElsbGlub2lzIFJpdmVyIHNub3dtZWx0IHJ1bm9mZiwgaGVhdnkgcmFpbiBvdmVyd2hlbG1pbmcgc3VtcCBwdW1wcywgYW5kIGdyb3VuZHdhdGVyIHNlZXBhZ2UgaW4gcml2ZXItYmFzaW4gbmVpZ2hib3Job29kcyBsaWtlIENoaWxsaWNvdGhlLiBDb250cmFjdG9ycyBoYW5kbGUgc3RhbmRpbmcgd2F0ZXIgcmVtb3ZhbCwgbXVkIGNsZWFudXAsIGFuZCBzdHJ1Y3R1cmFsIGFzc2Vzc21lbnQuPC9wPgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0iY29uZGl0aW9uLWNhcmQiPgogICAgICAgIDxoMz5Gcm96ZW4gJmFtcDsgQnVyc3QgUGlwZSBSZXNwb25zZTwvaDM+CiAgICAgICAgPHA+UGVvcmlhIHdpbnRlcnMgcmVndWxhcmx5IGRyb3AgYmVsb3cgemVyby4gV2hlbiB0ZW1wZXJhdHVyZXMgc3dpbmcgcmFwaWRseSDigJQgYmVsb3cgemVybyB0byA0MMKwRiBpbiAyNCBob3VycyDigJQgcGlwZXMgaW4gZXh0ZXJpb3Igd2FsbHMsIGdhcmFnZXMsIGFuZCBjcmF3bHNwYWNlcyBidXJzdC4gTG9jYWwgY29udHJhY3RvcnMgcmVzcG9uZCBzYW1lLWRheSB0byBleHRyYWN0IHdhdGVyIGFuZCBiZWdpbiBkcnlpbmcgYmVmb3JlIGRhbWFnZSBzcHJlYWRzLjwvcD4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9ImNvbmRpdGlvbi1jYXJkIj4KICAgICAgICA8aDM+U2V3YWdlICZhbXA7IENvbnRhbWluYXRlZCBXYXRlcjwvaDM+CiAgICAgICAgPHA+Q2F0ZWdvcnkgMyBibGFjayB3YXRlciAoc2V3YWdlLCBvdXRzaWRlIGZsb29kd2F0ZXIpIGNhbm5vdCBiZSBkcmllZCDigJQgY29udGFtaW5hdGVkIG1hdGVyaWFscyBtdXN0IGJlIHJlbW92ZWQgcGVyIElJQ1JDIFM1MDAuIENvbnRyYWN0b3JzIGhhbmRsZSBjb250YWlubWVudCwgcmVtb3ZhbCwgRVBBLXJlZ2lzdGVyZWQgYW50aW1pY3JvYmlhbCB0cmVhdG1lbnQsIGFuZCBIRVBBIGFpciBzY3J1YmJpbmcuPC9wPgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0iY29uZGl0aW9uLWNhcmQiPgogICAgICAgIDxoMz5Nb2xkIFJlbWVkaWF0aW9uPC9oMz4KICAgICAgICA8cD5XYXRlciBkYW1hZ2UgdGhhdCB3YXNuJ3QgZHJpZWQgcHJvcGVybHkg4oCUIG9yIHNhdCBoaWRkZW4gaW4gYSB3YWxsIOKAlCBsZWFkcyB0byBtb2xkLiBDb250cmFjdG9ycyBhc3Nlc3MsIGNvbnRhaW4sIGFuZCByZW1lZGlhdGUgcGVyIElJQ1JDIFM1MjAuIEluZGVwZW5kZW50IGNsZWFyYW5jZSB0ZXN0aW5nIGF2YWlsYWJsZSB0aHJvdWdoIGEgY2VydGlmaWVkIGluZHVzdHJpYWwgaHlnaWVuaXN0LjwvcD4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9ImNvbmRpdGlvbi1jYXJkIj4KICAgICAgICA8aDM+Q29tbWVyY2lhbCBXYXRlciBEYW1hZ2U8L2gzPgogICAgICAgIDxwPk9mZmljZSBidWlsZGluZ3MsIG1lZGljYWwgZmFjaWxpdGllcywgYW5kIGNvbW1lcmNpYWwgcHJvcGVydGllcyBpbiB0aGUgUGVvcmlhIGFuZCBFYXN0IFBlb3JpYSBhcmVhLiBDb250cmFjdG9ycyBzdGFmZiBjb21tZXJjaWFsIGpvYnMgYXBwcm9wcmlhdGVseSB0byBtaW5pbWl6ZSBkb3dudGltZSBhbmQgcHJvdmlkZSB0aGUgZG9jdW1lbnRhdGlvbiBpbnN1cmFuY2UgYWRqdXN0ZXJzIHJlcXVpcmUuPC9wPgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0iY29uZGl0aW9uLWNhcmQiPgogICAgICAgIDxoMz5JbnN1cmFuY2UgQ2xhaW0gQXNzaXN0YW5jZTwvaDM+CiAgICAgICAgPHA+VGhlIGNvbnRyYWN0b3JzIHdlIGNvbm5lY3QgeW91IHdpdGggd29yayB3aXRoIGFsbCBtYWpvciBJbGxpbm9pcyBjYXJyaWVycyDigJQgU3RhdGUgRmFybSwgQ291bnRyeSBGaW5hbmNpYWwsIFBla2luIEluc3VyYW5jZSwgVVNBQSwgQWxsc3RhdGUsIEZhcm1lcnMuIENvbXBsZXRlIG1vaXN0dXJlIGxvZ3MsIHBob3RvcywgYW5kIFhhY3RpbWF0ZS1jb21wYXRpYmxlIHNjb3BlIG9mIHdvcmsuIENvbnRyYWN0b3JzIGNvbW11bmljYXRlIGRpcmVjdGx5IHdpdGggeW91ciBhZGp1c3Rlci48L3A+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgPC9kaXY+Cjwvc2VjdGlvbj4KCjwhLS0gV2h5IGZhc3RlciBpcyBiZXR0ZXIgLS0+CjxzZWN0aW9uIGNsYXNzPSJzZWN0aW9uIj4KICA8ZGl2IGNsYXNzPSJjb250YWluZXIiPgogICAgPGRpdiBjbGFzcz0ic2VjdGlvbi1sYWJlbCI+V2h5IFNwZWVkIE1hdHRlcnM8L2Rpdj4KICAgIDxoMiBjbGFzcz0ic2VjdGlvbi10aXRsZSI+V2F0ZXIgRGFtYWdlIEdldHMgV29yc2UgRXZlcnkgSG91cjwvaDI+CiAgICA8cCBjbGFzcz0ic2VjdGlvbi1ib2R5Ij5UaGlzIGlzIG5vdCBhIHNjYXJlIHRhY3RpYyDigJQgaXQgaXMgdGhlIGRvY3VtZW50ZWQgdGltZWxpbmUgZnJvbSB0aGUgSUlDUkMgUzUwMCBzdGFuZGFyZC4gVGhlIGZhc3RlciB3YXRlciBpcyBleHRyYWN0ZWQgYW5kIGRyeWluZyBiZWdpbnMsIHRoZSBsb3dlciB0aGUgdG90YWwgZGFtYWdlIGFuZCB0aGUgbG93ZXIgdGhlIGZpbmFsIGNsYWltLjwvcD4KCiAgICA8ZGl2IGNsYXNzPSJzdGVwcyI+CiAgICAgIDxkaXYgY2xhc3M9InN0ZXAiPgogICAgICAgIDxkaXYgY2xhc3M9InN0ZXAtbnVtIj4xaDwvZGl2PgogICAgICAgIDxkaXY+CiAgICAgICAgICA8aDM+Rmlyc3QgSG91cjogU3ByZWFkICZhbXA7IEFic29ycHRpb248L2gzPgogICAgICAgICAgPHA+V2F0ZXIgbWlncmF0ZXMgdW5kZXIgZmxvb3JpbmcsIGludG8gd2FsbCBjYXZpdGllcywgYW5kIHRocm91Z2ggZHJ5d2FsbC4gQ2FycGV0IHBhZCBhYnNvcmJzIGFuZCBob2xkcyB3YXRlci4gVGhlIGxvbmdlciBpdCBzaXRzLCB0aGUgbW9yZSBzdXJmYWNlIGFyZWEgaXMgYWZmZWN0ZWQg4oCUIGFuZCB0aGUgbW9yZSBtYXRlcmlhbCBtdXN0IGJlIHJlcGxhY2VkIHJhdGhlciB0aGFuIGRyaWVkLjwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9InN0ZXAiPgogICAgICAgIDxkaXYgY2xhc3M9InN0ZXAtbnVtIj4yNGg8L2Rpdj4KICAgICAgICA8ZGl2PgogICAgICAgICAgPGgzPjI0IEhvdXJzOiBEcnl3YWxsIERhbWFnZSBCZWdpbnM8L2gzPgogICAgICAgICAgPHA+RHJ5d2FsbCBzd2VsbHMsIHdhcnBzLCBhbmQgbG9zZXMgc3RydWN0dXJhbCBpbnRlZ3JpdHkuIEhhcmR3b29kIGZsb29yaW5nIHN0YXJ0cyB0byBjdXAuIFN1YmZsb29yIG1hdGVyaWFscyBhYnNvcmIgd2F0ZXIuIEluIFBlb3JpYSdzIG9sZGVyIGhvbWVzIHdpdGggZmluaXNoZWQgYmFzZW1lbnRzLCAyNCBob3VycyBjYW4gdHVybiBhICQzLDAwMCBqb2IgaW50byBhICQxMCwwMDArIHJlYnVpbGQuPC9wPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0ic3RlcCI+CiAgICAgICAgPGRpdiBjbGFzcz0ic3RlcC1udW0iPjQ4aDwvZGl2PgogICAgICAgIDxkaXY+CiAgICAgICAgICA8aDM+NDggSG91cnM6IE1vbGQgR3Jvd3RoIENhbiBCZWdpbjwvaDM+CiAgICAgICAgICA8cD5UaGUgSUlDUkMgUzUyMCBzdGFuZGFyZCBpZGVudGlmaWVzIDI0Jm5kYXNoOzQ4IGhvdXJzIGFzIHRoZSB3aW5kb3cgaW4gd2hpY2ggbW9sZCBjYW4gYmVnaW4gZ3Jvd2luZyBvbiB3ZXQgb3JnYW5pYyBtYXRlcmlhbHMgYXQgbm9ybWFsIHJvb20gdGVtcGVyYXR1cmVzLiBPbmNlIG1vbGQgaXMgcHJlc2VudCwgcmVtZWRpYXRpb24gc2NvcGUgYW5kIGNvc3QgaW5jcmVhc2Ugc2lnbmlmaWNhbnRseS48L3A+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJzdGVwIj4KICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLW51bSI+N2Q8L2Rpdj4KICAgICAgICA8ZGl2PgogICAgICAgICAgPGgzPk9uZSBXZWVrOiBTdHJ1Y3R1cmFsIENvbXByb21pc2U8L2gzPgogICAgICAgICAgPHA+RnJhbWluZyBsdW1iZXIsIHN1YmZsb29yIE9TQiwgYW5kIHN0cnVjdHVyYWwgY29tcG9uZW50cyBiZWdpbiB0byBkZXRlcmlvcmF0ZS4gSW4gUGVvcmlhJ3MgcHJlLTE5ODAgaG91c2luZyBzdG9jayB3aXRoIG9sZGVyIGZyYW1pbmcsIHByb2xvbmdlZCBzYXR1cmF0aW9uIGNhbiBjb21wcm9taXNlIHN0cnVjdHVyYWwgaW50ZWdyaXR5IGZhc3RlciB0aGFuIGluIG5ld2VyIGNvbnN0cnVjdGlvbi48L3A+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgPC9kaXY+Cjwvc2VjdGlvbj4KCjwhLS0gV2h5IHVzIC0tPgo8c2VjdGlvbiBjbGFzcz0ic2VjdGlvbiBzZWN0aW9uLWdyYXkiPgogIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+CiAgICA8ZGl2IGNsYXNzPSJzZWN0aW9uLWxhYmVsIj5XaHkgQ2hvb3NlIFVzPC9kaXY+CiAgICA8aDIgY2xhc3M9InNlY3Rpb24tdGl0bGUiPklJQ1JDIENlcnRpZmllZC4gSW5zdXJhbmNlIEFwcHJvdmVkLiBMb2NhbCB0byBQZW9yaWEuPC9oMj4KICAgIDxwIGNsYXNzPSJzZWN0aW9uLWJvZHkiPk5vdCBldmVyeSB3YXRlciBkYW1hZ2UgY29udHJhY3RvciBpcyB0aGUgc2FtZS4gSGVyZSBpcyB3aGF0IHRvIGxvb2sgZm9yIOKAlCBhbmQgd2hhdCB0aGUgY29udHJhY3RvcnMgd2UgcmVmZXIgeW91IHRvIHByb3ZpZGUuPC9wPgoKICAgIDxkaXYgY2xhc3M9IndoeS1ncmlkIj4KICAgICAgPGRpdiBjbGFzcz0id2h5LWl0ZW0iPgogICAgICAgIDxkaXYgY2xhc3M9IndoeS1pY29uIj4mIzEyNzk0Mjs8L2Rpdj4KICAgICAgICA8ZGl2PgogICAgICAgICAgPGgzPklJQ1JDIENlcnRpZmllZCBUZWNobmljaWFuczwvaDM+CiAgICAgICAgICA8cD5UaGUgSUlDUkMgc2V0cyB0aGUgdGVjaG5pY2FsIHN0YW5kYXJkcyBmb3Igd2F0ZXIgZGFtYWdlIHJlc3RvcmF0aW9uLiBDZXJ0aWZpZWQgdGVjaG5pY2lhbnMgZm9sbG93IHZhbGlkYXRlZCBwcm90b2NvbHMg4oCUIG5vdCBndWVzc3dvcmsuIEFzayBhbnkgY29udHJhY3RvciBmb3IgdGhlaXIgSUlDUkMgY2VydGlmaWNhdGlvbiBudW1iZXIgYmVmb3JlIGhpcmluZy48L3A+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJ3aHktaXRlbSI+CiAgICAgICAgPGRpdiBjbGFzcz0id2h5LWljb24iPiYjMTI4MTk2OzwvZGl2PgogICAgICAgIDxkaXY+CiAgICAgICAgICA8aDM+SW5zdXJhbmNlIEFwcHJvdmVkICZhbXA7IERvY3VtZW50YXRpb24tUmVhZHk8L2gzPgogICAgICAgICAgPHA+VGhlIGNvbnRyYWN0b3JzIHdlIGNvbm5lY3QgeW91IHdpdGggd29yayB3aXRoIFN0YXRlIEZhcm0sIENvdW50cnkgRmluYW5jaWFsLCBQZWtpbiBJbnN1cmFuY2UsIFVTQUEsIEFsbHN0YXRlLCBhbmQgYWxsIG1ham9yIElsbGlub2lzIGNhcnJpZXJzLiBNb2lzdHVyZSBsb2dzLCBwaG90b3MsIGFuZCBYYWN0aW1hdGUtY29tcGF0aWJsZSBzY29wZSDigJQgaW4gdGhlIGZvcm1hdCB5b3VyIGFkanVzdGVyIG5lZWRzLjwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9IndoeS1pdGVtIj4KICAgICAgICA8ZGl2IGNsYXNzPSJ3aHktaWNvbiI+JiMxMjg2ODA7PC9kaXY+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxoMz5TYW1lLURheSBFbWVyZ2VuY3kgUmVzcG9uc2U8L2gzPgogICAgICAgICAgPHA+MjQvNy8zNjUgaW5jbHVkaW5nIHdlZWtlbmRzIGFuZCBob2xpZGF5cy4gQSBidXJzdCBwaXBlIGluIEphbnVhcnkgYXQgMmFtIGRvZXNuJ3Qgd2FpdCBmb3IgYnVzaW5lc3MgaG91cnMg4oCUIG5laXRoZXIgZG8gd2UuPC9wPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0id2h5LWl0ZW0iPgogICAgICAgIDxkaXYgY2xhc3M9IndoeS1pY29uIj4mIzEyODI5NTs8L2Rpdj4KICAgICAgICA8ZGl2PgogICAgICAgICAgPGgzPkNvbW1lcmNpYWwgRXF1aXBtZW50LCBOb3QgQ29uc3VtZXIgR2VhcjwvaDM+CiAgICAgICAgICA8cD5UcnVjay1tb3VudGVkIGV4dHJhY3Rpb24sIExHUiBpbmR1c3RyaWFsIGRlaHVtaWRpZmllcnMsIGhpZ2gtdmVsb2NpdHkgYWlyIG1vdmVycywgYW5kIHRoZXJtYWwgaW1hZ2luZyBjYW1lcmFzLiBDb25zdW1lciBmYW5zIGFuZCBkZWh1bWlkaWZpZXJzIG1vdmUgYSBmcmFjdGlvbiBvZiB0aGUgbW9pc3R1cmUgcHJvZmVzc2lvbmFsIGVxdWlwbWVudCByZW1vdmVzLjwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9IndoeS1pdGVtIj4KICAgICAgICA8ZGl2IGNsYXNzPSJ3aHktaWNvbiI+JiMxMjgyMDU7PC9kaXY+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxoMz5Mb2NhbCB0byBQZW9yaWEg4oCUIE5vdCBhIFN0b3JtIENoYXNlcjwvaDM+CiAgICAgICAgICA8cD5XZSBrbm93IFBlb3JpYSDigJQgdGhlIEphbnVhcnkgZGVlcCBmcmVlemVzLCB0aGUgSWxsaW5vaXMgUml2ZXIgc3ByaW5nIGZsb29kaW5nLCB0aGUgb2xkZXIgaG91c2luZyBzdG9jayBpbiBQZW9yaWEgSGVpZ2h0cyBhbmQgQ2hpbGxpY290aGUuIFN0b3JtIGNoYXNlcnMgY29tZSBpbiBhZnRlciBhIGRpc2FzdGVyIGFuZCBsZWF2ZS4gV2UncmUgaGVyZSB5ZWFyLXJvdW5kLjwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9IndoeS1pdGVtIj4KICAgICAgICA8ZGl2IGNsYXNzPSJ3aHktaWNvbiI+JiMxMjc5ODE7PC9kaXY+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxoMz5GcmVlIE9uLVNpdGUgRXN0aW1hdGUgd2l0aCBNb2lzdHVyZSBSZWFkaW5nczwvaDM+CiAgICAgICAgICA8cD5Db250cmFjdG9ycyBhc3Nlc3MgdGhlIGRhbWFnZSBvbi1zaXRlLCB0YWtlIG1vaXN0dXJlIHJlYWRpbmdzIHdpdGggcHJvZmVzc2lvbmFsIG1ldGVycywgYW5kIHByb3ZpZGUgYSBjbGVhciBzY29wZSBvZiB3b3JrIGJlZm9yZSBhbnkgd29yayBiZWdpbnMuIE5vIHN1cnByaXNlIGNvc3RzLCBubyBwcmVzc3VyZS48L3A+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgPC9kaXY+Cjwvc2VjdGlvbj4KCjwhLS0gTGVhZCBmb3JtIC0tPgo8c2VjdGlvbiBjbGFzcz0ic2VjdGlvbiI+CiAgPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KICAgIDxkaXYgY2xhc3M9InNlY3Rpb24tbGFiZWwiPkdldCBIZWxwIE5vdzwvZGl2PgogICAgPGgyIGNsYXNzPSJzZWN0aW9uLXRpdGxlIj5SZXF1ZXN0IGEgRnJlZSBFc3RpbWF0ZTwvaDI+CiAgICA8cCBjbGFzcz0ic2VjdGlvbi1ib2R5Ij5Gb3IgZW1lcmdlbmNpZXMsIGNhbGwgPGEgaHJlZj0idGVsOjMwOTU1NTAxMDAiIHN0eWxlPSJjb2xvcjp2YXIoLS1vcmFuZ2UtZGFyayk7Zm9udC13ZWlnaHQ6NzAwOyI+KDMwOSkgNTU1LTAxMDA8L2E+IGRpcmVjdGx5LiBGb3Igbm9uLWVtZXJnZW5jeSBlc3RpbWF0ZXMsIGZpbGwgaW4gdGhlIGZvcm0gYmVsb3cuPC9wPgoKICAgIDxkaXYgc3R5bGU9Im1heC13aWR0aDo1NjBweDsgbWFyZ2luOjAgYXV0bzsiPgogICAgICA8Zm9ybSBpZD0iaG9tZS1sZWFkLWZvcm0iIGFjdGlvbj0iaHR0cHM6Ly9tZWRpYS5zaW1hcm9hLmNvbS9hcGkvbWVkaWEvbGVhZHMiIG1ldGhvZD0iUE9TVCI+CiAgICAgICAgPGRpdiBjbGFzcz0iZm9ybS1ncm91cCI+CiAgICAgICAgICA8bGFiZWwgZm9yPSJoLW5hbWUiPkZ1bGwgTmFtZSAqPC9sYWJlbD4KICAgICAgICAgIDxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0iaC1uYW1lIiBuYW1lPSJuYW1lIiBwbGFjZWhvbGRlcj0iSmFuZSBTbWl0aCIgcmVxdWlyZWQ+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzcz0iZm9ybS1ncm91cCI+CiAgICAgICAgICA8bGFiZWwgZm9yPSJoLXBob25lIj5QaG9uZSBOdW1iZXIgKjwvbGFiZWw+CiAgICAgICAgICA8aW5wdXQgdHlwZT0idGVsIiBpZD0iaC1waG9uZSIgbmFtZT0icGhvbmUiIHBsYWNlaG9sZGVyPSIoMzA5KSA1NTUtMTIzNCIgcmVxdWlyZWQ+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzcz0iZm9ybS1ncm91cCI+CiAgICAgICAgICA8bGFiZWwgZm9yPSJoLXNlcnZpY2UiPlR5cGUgb2YgRGFtYWdlICo8L2xhYmVsPgogICAgICAgICAgPHNlbGVjdCBpZD0iaC1zZXJ2aWNlIiBuYW1lPSJzZXJ2aWNlIiByZXF1aXJlZD4KICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iIj5TZWxlY3QuLi48L29wdGlvbj4KICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iYnVyc3QtcGlwZSI+QnVyc3QgcGlwZSAvIGZyb3plbiBwaXBlPC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9ImJhc2VtZW50LWZsb29kaW5nIj5CYXNlbWVudCBmbG9vZGluZzwvb3B0aW9uPgogICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJhcHBsaWFuY2UtZmFpbHVyZSI+QXBwbGlhbmNlIGZhaWx1cmUgKGRpc2h3YXNoZXIsIHdhc2hlciwgd2F0ZXIgaGVhdGVyKTwvb3B0aW9uPgogICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJzZXdhZ2UtYmFja3VwIj5TZXdhZ2UgYmFja3VwIC8gdG9pbGV0IG92ZXJmbG93PC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9InJvb2YtbGVhayI+Um9vZiBsZWFrIC8gc3Rvcm0gZGFtYWdlPC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9Im1vbGQiPk1vbGQgZnJvbSBwYXN0IHdhdGVyIGRhbWFnZTwvb3B0aW9uPgogICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJjb21tZXJjaWFsIj5Db21tZXJjaWFsIHByb3BlcnR5PC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9Im90aGVyIj5PdGhlciAvIG5vdCBzdXJlPC9vcHRpb24+CiAgICAgICAgICA8L3NlbGVjdD4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJmb3JtLWdyb3VwIj4KICAgICAgICAgIDxsYWJlbCBmb3I9ImgtaW5zdXJhbmNlIj5JbnN1cmFuY2UgQ2FycmllciAob3B0aW9uYWwpPC9sYWJlbD4KICAgICAgICAgIDxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0iaC1pbnN1cmFuY2UiIG5hbWU9Imluc3VyYW5jZSIgcGxhY2Vob2xkZXI9ImUuZy4gU3RhdGUgRmFybSwgUGVraW4gSW5zdXJhbmNlLCBDb3VudHJ5IEZpbmFuY2lhbCwgc2VsZi1wYXkiPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImZvcm0tZ3JvdXAiPgogICAgICAgICAgPGxhYmVsIGZvcj0iaC1tZXNzYWdlIj5CcmllZiBEZXNjcmlwdGlvbiAob3B0aW9uYWwpPC9sYWJlbD4KICAgICAgICAgIDx0ZXh0YXJlYSBpZD0iaC1tZXNzYWdlIiBuYW1lPSJtZXNzYWdlIiBwbGFjZWhvbGRlcj0iV2hlbiBkaWQgaXQgaGFwcGVuPyBIb3cgbXVjaCBzdGFuZGluZyB3YXRlcj8gV2hhdCByb29tcyBhcmUgYWZmZWN0ZWQ/Ij48L3RleHRhcmVhPgogICAgICAgIDwvZGl2PgogICAgICAgIDxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9InNpdGUiIHZhbHVlPSJwZW9yaWEtd2F0ZXIiPgogICAgICAgIDxidXR0b24gdHlwZT0ic3VibWl0IiBjbGFzcz0iYnRuLXN1Ym1pdCI+JiMxMjg2ODA7IFJlcXVlc3QgRW1lcmdlbmN5IEVzdGltYXRlICZyYXJyOzwvYnV0dG9uPgogICAgICA8L2Zvcm0+CgogICAgICA8ZGl2IGNsYXNzPSJkaXNjbGFpbWVyIj4KICAgICAgICBGb3IgYWN0aXZlIHdhdGVyIGRhbWFnZSBlbWVyZ2VuY2llcywgY2FsbCA8c3Ryb25nPigzMDkpIDU1NS0wMTAwPC9zdHJvbmc+IGRpcmVjdGx5IOKAlCBkbyBub3Qgd2FpdCBmb3IgYSBmb3JtIHJlc3BvbnNlLgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogIDwvZGl2Pgo8L3NlY3Rpb24+Cgo8c2NyaXB0PgogIGNvbnN0IGhGb3JtID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2hvbWUtbGVhZC1mb3JtJykKICBoRm9ybS5hZGRFdmVudExpc3RlbmVyKCdzdWJtaXQnLCBhc3luYyBmdW5jdGlvbihlKSB7CiAgICBlLnByZXZlbnREZWZhdWx0KCkKICAgIGNvbnN0IGJ0biA9IGhGb3JtLnF1ZXJ5U2VsZWN0b3IoJy5idG4tc3VibWl0JykKICAgIGJ0bi50ZXh0Q29udGVudCA9ICdTZW5kaW5nLi4uJwogICAgYnRuLmRpc2FibGVkID0gdHJ1ZQogICAgdHJ5IHsKICAgICAgY29uc3QgZGF0YSA9IE9iamVjdC5mcm9tRW50cmllcyhuZXcgRm9ybURhdGEoaEZvcm0pKQogICAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChoRm9ybS5hY3Rpb24sIHsKICAgICAgICBtZXRob2Q6ICdQT1NUJywKICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShkYXRhKSwKICAgICAgICBoZWFkZXJzOiB7ICdDb250ZW50LVR5cGUnOiAnYXBwbGljYXRpb24vanNvbicsICdBY2NlcHQnOiAnYXBwbGljYXRpb24vanNvbicgfQogICAgICB9KQogICAgICBpZiAocmVzLm9rKSB7CiAgICAgICAgaEZvcm0uaW5uZXJIVE1MID0gJzxkaXYgc3R5bGU9InRleHQtYWxpZ246Y2VudGVyO3BhZGRpbmc6NDBweCAyMHB4OyI+PGRpdiBzdHlsZT0iZm9udC1zaXplOjJyZW07bWFyZ2luLWJvdHRvbToxNnB4OyI+JiN4MjcwNTs8L2Rpdj48aDMgc3R5bGU9ImNvbG9yOnZhcigtLWJsdWUtZGFyayk7Zm9udC1zaXplOjEuMnJlbTttYXJnaW4tYm90dG9tOjhweDsiPlJlcXVlc3QgcmVjZWl2ZWQuPC9oMz48cCBzdHlsZT0iY29sb3I6dmFyKC0tbXV0ZWQpO2ZvbnQtc2l6ZTouOTVyZW07Ij5XZVwnbGwgYmUgaW4gdG91Y2ggc2hvcnRseS4gRm9yIGVtZXJnZW5jaWVzIGNhbGwgPGEgaHJlZj0idGVsOjMwOTU1NTAxMDAiIHN0eWxlPSJjb2xvcjp2YXIoLS1vcmFuZ2UtZGFyayk7Zm9udC13ZWlnaHQ6NzAwOyI+KDMwOSkgNTU1LTAxMDA8L2E+LjwvcD48L2Rpdj4nCiAgICAgIH0gZWxzZSB7CiAgICAgICAgYnRuLnRleHRDb250ZW50ID0gJ1JlcXVlc3QgRW1lcmdlbmN5IEVzdGltYXRlIFx1MjE5MicKICAgICAgICBidG4uZGlzYWJsZWQgPSBmYWxzZQogICAgICAgIGFsZXJ0KCdTb21ldGhpbmcgd2VudCB3cm9uZy4gUGxlYXNlIGNhbGwgKDMwOSkgNTU1LTAxMDAuJykKICAgICAgfQogICAgfSBjYXRjaCB7CiAgICAgIGJ0bi50ZXh0Q29udGVudCA9ICdSZXF1ZXN0IEVtZXJnZW5jeSBFc3RpbWF0ZSBcdTIxOTInCiAgICAgIGJ0bi5kaXNhYmxlZCA9IGZhbHNlCiAgICAgIGFsZXJ0KCdTb21ldGhpbmcgd2VudCB3cm9uZy4gUGxlYXNlIGNhbGwgKDMwOSkgNTU1LTAxMDAuJykKICAgIH0KICB9KQo8L3NjcmlwdD4KCjwhLS0gQ1RBIC0tPgo8c2VjdGlvbiBjbGFzcz0iZW1lcmdlbmN5LWN0YSI+CiAgPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KICAgIDxoMj4mIzEyODY4MDsgQWN0aXZlIFdhdGVyIERhbWFnZT8gQ2FsbCBOb3cuPC9oMj4KICAgIDxwPkV2ZXJ5IGhvdXIgbWF0dGVycy4gU2FtZS1kYXkgcmVzcG9uc2Ug4oCUIDI0LzcvMzY1LjwvcD4KICAgIDxhIGhyZWY9InRlbDozMDk1NTUwMTAwIiBjbGFzcz0iYnRuLWRhcmsiPiYjMTI4MjIyOyAoMzA5KSA1NTUtMDEwMCDigJQgQ2FsbCBOb3c8L2E+CiAgPC9kaXY+Cjwvc2VjdGlvbj4KCjwhLS0gRm9vdGVyIC0tPgo8Zm9vdGVyIGNsYXNzPSJzaXRlLWZvb3RlciI+CiAgPGRpdiBjbGFzcz0iZm9vdGVyLWlubmVyIj4KICAgIDxkaXYgY2xhc3M9ImZvb3Rlci1jb2wgZm9vdGVyLW5hcCI+CiAgICAgIDxoND5QZW9yaWEgV2F0ZXIgRGFtYWdlIFJlc3RvcmF0aW9uPC9oND4KICAgICAgPHA+PHN0cm9uZz5QaG9uZTo8L3N0cm9uZz4gKDMwOSkgNTU1LTAxMDA8L3A+CiAgICAgIDxwPjxzdHJvbmc+QXJlYTo8L3N0cm9uZz4gUGVvcmlhLCBJTDwvcD4KICAgICAgPHA+PHN0cm9uZz5Ib3Vyczo8L3N0cm9uZz4gMjQvNyBFbWVyZ2VuY3kgU2VydmljZTwvcD4KICAgIDwvZGl2PgogICAgPGRpdiBjbGFzcz0iZm9vdGVyLWNvbCI+CiAgICAgIDxoND5TZXJ2aWNlczwvaDQ+CiAgICAgIDxhIGhyZWY9Ii9zZXJ2aWNlcy5odG1sIj5XYXRlciBFeHRyYWN0aW9uPC9hPgogICAgICA8YSBocmVmPSIvc2VydmljZXMuaHRtbCI+U3RydWN0dXJhbCBEcnlpbmc8L2E+CiAgICAgIDxhIGhyZWY9Ii9zZXJ2aWNlcy5odG1sIj5CYXNlbWVudCBGbG9vZGluZzwvYT4KICAgICAgPGEgaHJlZj0iL3NlcnZpY2VzLmh0bWwiPlNld2FnZSBDbGVhbnVwPC9hPgogICAgICA8YSBocmVmPSIvc2VydmljZXMuaHRtbCI+TW9sZCBSZW1lZGlhdGlvbjwvYT4KICAgICAgPGEgaHJlZj0iL3NlcnZpY2VzLmh0bWwiPkluc3VyYW5jZSBDbGFpbXM8L2E+CiAgICA8L2Rpdj4KICAgIDxkaXYgY2xhc3M9ImZvb3Rlci1jb2wiPgogICAgICA8aDQ+U2VydmljZSBBcmVhPC9oND4KICAgICAgPHA+UGVvcmlhLCBJTDwvcD4KICAgICAgPHA+RWFzdCBQZW9yaWEsIElMPC9wPgogICAgICA8cD5QZWtpbiwgSUw8L3A+CiAgICAgIDxwPk1vcnRvbiwgSUw8L3A+CiAgICAgIDxwPkNoaWxsaWNvdGhlLCBJTDwvcD4KICAgICAgPHA+RHVubGFwLCBJTDwvcD4KICAgIDwvZGl2PgogICAgPGRpdiBjbGFzcz0iZm9vdGVyLWNvbCI+CiAgICAgIDxoND5RdWljayBMaW5rczwvaDQ+CiAgICAgIDxhIGhyZWY9Ii8iPkhvbWU8L2E+CiAgICAgIDxhIGhyZWY9Ii9zZXJ2aWNlcy5odG1sIj5TZXJ2aWNlczwvYT4KICAgICAgPGEgaHJlZj0iL2ZhcS8iPkZBUTwvYT4KICAgICAgPGEgaHJlZj0iL2NvbnRhY3QuaHRtbCI+RnJlZSBFc3RpbWF0ZTwvYT4KICAgIDwvZGl2PgogIDwvZGl2PgogIDxkaXYgY2xhc3M9ImZvb3Rlci1ib3R0b20iPgogICAgPHAgc3R5bGU9ImZvbnQtc2l6ZTouNzVyZW07Y29sb3I6Izk0YTNiODttYXJnaW46MCAwIDhweDsiPlBlb3JpYVdhdGVyRGFtYWdlLm5ldCBpcyBhIHJlZmVycmFsIHNlcnZpY2UgY29ubmVjdGluZyBob21lb3duZXJzIHdpdGggaW5kZXBlbmRlbnQgbG9jYWwgcmVzdG9yYXRpb24gY29udHJhY3RvcnMuPC9wPgogICAgPHNwYW4+JmNvcHk7IDIwMjYgUGVvcmlhIFdhdGVyIERhbWFnZSBSZXN0b3JhdGlvbiAmbWRhc2g7IFBlb3JpYSwgSUw8L3NwYW4+CiAgICA8c3Bhbj5JSUNSQyBDZXJ0aWZpZWQgJm1pZGRvdDsgTGljZW5zZWQgJmFtcDsgSW5zdXJlZCAmbWlkZG90OyBJbnN1cmFuY2UgQXBwcm92ZWQ8L3NwYW4+CiAgPC9kaXY+CjwvZm9vdGVyPgoKPCEtLSBBSSBDaGF0IFdpZGdldCAtLT4KPHNjcmlwdCBzcmM9Imh0dHBzOi8vYXBpLnBlb3JpYXdhdGVyZGFtYWdlLm5ldC93aWRnZXQuanMiIGRhdGEtc2l0ZT0iMiI+PC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPgo=
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peoria Water Damage Restoration | 24/7 Flood Cleanup — IICRC Certified</title>
+  <meta name="description" content="24/7 water damage restoration in Peoria, IL. IICRC certified, insurance approved, same-day response. Flood cleanup, water extraction, structural drying. Call (309) 555-0100.">
+  <link rel="canonical" href="https://peoriawaterdamage.net/">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Peoria Water Damage Restoration | 24/7 Emergency Response">
+  <meta property="og:description" content="IICRC certified water damage restoration in Peoria, IL. Same-day response. Insurance approved. Call (309) 555-0100.">
+  <meta property="og:url" content="https://peoriawaterdamage.net/">
+  <meta property="og:type" content="website">
+
+  <!-- Schema: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Peoria Water Damage Restoration",
+    "url": "https://peoriawaterdamage.net",
+    "telephone": "(309) 555-0100",
+    "priceRange": "$$$",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "areaServed": [
+      { "@type": "City", "name": "Peoria" },
+      { "@type": "City", "name": "East Peoria" },
+      { "@type": "City", "name": "Pekin" },
+      { "@type": "City", "name": "Morton" },
+      { "@type": "City", "name": "Chillicothe" },
+      { "@type": "City", "name": "Dunlap" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Peoria",
+      "addressRegion": "IL",
+      "addressCountry": "US"
+    },
+    "description": "24/7 water damage restoration in Peoria, IL. IICRC certified technicians. Flood cleanup, water extraction, structural drying, mold remediation. Insurance approved.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Water Damage Restoration Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Damage Restoration" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Flood Damage Cleanup" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Extraction" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Structural Drying" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sewage Cleanup" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mold Remediation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Water Damage" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Insurance Claim Assistance" } }
+      ]
+    }
+  }
+  </script>
+  <!-- GA4 placeholder — replace G-XXXXXXXXXX with real ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+<!-- Emergency bar -->
+<div class="emergency-bar">
+  &#128680; Water damage emergency? Call <a href="tel:3095550100">(309) 555-0100</a> — 24/7, including weekends &amp; holidays
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="logo">Peoria <span>Water Damage</span></div>
+  <a href="tel:3095550100" class="header-phone">&#128222; (309) 555-0100</a>
+</header>
+<nav>
+  <a href="/" class="active">Home</a>
+  <a href="/services.html">Services</a>
+  <a href="/faq/">FAQ</a>
+  <a href="/contact.html">Free Estimate</a>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-badge">Peoria, IL — 24/7 Emergency Response</div>
+  <h1>Water Damage Restoration<br><span>Peoria, Illinois</span></h1>
+  <p class="hero-sub">IICRC certified technicians. Same-day response. Insurance approved. Contractors extract water, dry structures to IICRC S500 standard, and document everything your adjuster needs.</p>
+  <div>
+    <a href="tel:3095550100" class="btn-primary">&#128680; Call (309) 555-0100 — 24/7</a>
+    <a href="/contact.html" class="btn-secondary">Free Estimate &rarr;</a>
+  </div>
+  <div class="hero-trust">
+    <span>IICRC Certified</span>
+    <span>Insurance Approved</span>
+    <span>Licensed &amp; Insured</span>
+    <span>Same-Day Response</span>
+    <span>Free Estimate</span>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<div class="trust-strip">
+  <div class="trust-item">
+    <div class="num">24/7</div>
+    <div class="label">Emergency Response — 365 Days/Year</div>
+  </div>
+  <div class="trust-item">
+    <div class="num">24&ndash;40h</div>
+    <div class="label">Mold Can Begin Growing — Fast Action Matters</div>
+  </div>
+  <div class="trust-item">
+    <div class="num">IICRC</div>
+    <div class="label">Certified Technicians — Industry Standard</div>
+  </div>
+  <div class="trust-item">
+    <div class="num">$0</div>
+    <div class="label">On-Site Estimate with Moisture Readings</div>
+  </div>
+</div>
+
+<!-- Services -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-label">What We Do</div>
+    <h2 class="section-title">Water Damage Restoration Services — Peoria, IL</h2>
+    <p class="section-body">Burst pipe at 2am in January. Basement flood from spring snowmelt. Sewage backup through the floor drain. Every situation is different — here is what the contractors we connect you with handle.</p>
+
+    <div class="conditions-grid">
+      <div class="condition-card">
+        <h3>Water Extraction</h3>
+        <p>Truck-mounted extraction units remove standing water, water trapped in carpet and pad, and surface water from hard floors. Far more powerful than any consumer equipment. Contractors follow with thermal imaging to find hidden moisture in wall cavities before drying begins.</p>
+      </div>
+      <div class="condition-card">
+        <h3>Structural Drying</h3>
+        <p>Industrial dehumidifiers and high-velocity air movers placed per IICRC S500 psychrometric calculations. Daily moisture readings documented at mapped points. Drying continues until materials reach target moisture content — incomplete drying causes mold.</p>
+      </div>
+      <div class="condition-card">
+        <h3>Basement Flooding Cleanup</h3>
+        <p>Peoria basements flood from spring Illinois River snowmelt runoff, heavy rain overwhelming sump pumps, and groundwater seepage in river-basin neighborhoods like Chillicothe. Contractors handle standing water removal, mud cleanup, and structural assessment.</p>
+      </div>
+      <div class="condition-card">
+        <h3>Frozen &amp; Burst Pipe Response</h3>
+        <p>Peoria winters regularly drop below zero. When temperatures swing rapidly — below zero to 40°F in 24 hours — pipes in exterior walls, garages, and crawlspaces burst. Local contractors respond same-day to extract water and begin drying before damage spreads.</p>
+      </div>
+      <div class="condition-card">
+        <h3>Sewage &amp; Contaminated Water</h3>
+        <p>Category 3 black water (sewage, outside floodwater) cannot be dried — contaminated materials must be removed per IICRC S500. Contractors handle containment, removal, EPA-registered antimicrobial treatment, and HEPA air scrubbing.</p>
+      </div>
+      <div class="condition-card">
+        <h3>Mold Remediation</h3>
+        <p>Water damage that wasn't dried properly — or sat hidden in a wall — leads to mold. Contractors assess, contain, and remediate per IICRC S520. Independent clearance testing available through a certified industrial hygienist.</p>
+      </div>
+      <div class="condition-card">
+        <h3>Commercial Water Damage</h3>
+        <p>Office buildings, medical facilities, and commercial properties in the Peoria and East Peoria area. Contractors staff commercial jobs appropriately to minimize downtime and provide the documentation insurance adjusters require.</p>
+      </div>
+      <div class="condition-card">
+        <h3>Insurance Claim Assistance</h3>
+        <p>The contractors we connect you with work with all major Illinois carriers — State Farm, Country Financial, Pekin Insurance, USAA, Allstate, Farmers. Complete moisture logs, photos, and Xactimate-compatible scope of work. Contractors communicate directly with your adjuster.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why faster is better -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Why Speed Matters</div>
+    <h2 class="section-title">Water Damage Gets Worse Every Hour</h2>
+    <p class="section-body">This is not a scare tactic — it is the documented timeline from the IICRC S500 standard. The faster water is extracted and drying begins, the lower the total damage and the lower the final claim.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1h</div>
+        <div>
+          <h3>First Hour: Spread &amp; Absorption</h3>
+          <p>Water migrates under flooring, into wall cavities, and through drywall. Carpet pad absorbs and holds water. The longer it sits, the more surface area is affected — and the more material must be replaced rather than dried.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">24h</div>
+        <div>
+          <h3>24 Hours: Drywall Damage Begins</h3>
+          <p>Drywall swells, warps, and loses structural integrity. Hardwood flooring starts to cup. Subfloor materials absorb water. In Peoria's older homes with finished basements, 24 hours can turn a $3,000 job into a $10,000+ rebuild.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">48h</div>
+        <div>
+          <h3>48 Hours: Mold Growth Can Begin</h3>
+          <p>The IICRC S520 standard identifies 24&ndash;48 hours as the window in which mold can begin growing on wet organic materials at normal room temperatures. Once mold is present, remediation scope and cost increase significantly.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">7d</div>
+        <div>
+          <h3>One Week: Structural Compromise</h3>
+          <p>Framing lumber, subfloor OSB, and structural components begin to deteriorate. In Peoria's pre-1980 housing stock with older framing, prolonged saturation can compromise structural integrity faster than in newer construction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-label">Why Choose Us</div>
+    <h2 class="section-title">IICRC Certified. Insurance Approved. Local to Peoria.</h2>
+    <p class="section-body">Not every water damage contractor is the same. Here is what to look for — and what the contractors we refer you to provide.</p>
+
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">&#127942;</div>
+        <div>
+          <h3>IICRC Certified Technicians</h3>
+          <p>The IICRC sets the technical standards for water damage restoration. Certified technicians follow validated protocols — not guesswork. Ask any contractor for their IICRC certification number before hiring.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">&#128196;</div>
+        <div>
+          <h3>Insurance Approved &amp; Documentation-Ready</h3>
+          <p>The contractors we connect you with work with State Farm, Country Financial, Pekin Insurance, USAA, Allstate, and all major Illinois carriers. Moisture logs, photos, and Xactimate-compatible scope — in the format your adjuster needs.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">&#128680;</div>
+        <div>
+          <h3>Same-Day Emergency Response</h3>
+          <p>24/7/365 including weekends and holidays. A burst pipe in January at 2am doesn't wait for business hours — neither do we.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">&#128295;</div>
+        <div>
+          <h3>Commercial Equipment, Not Consumer Gear</h3>
+          <p>Truck-mounted extraction, LGR industrial dehumidifiers, high-velocity air movers, and thermal imaging cameras. Consumer fans and dehumidifiers move a fraction of the moisture professional equipment removes.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">&#128205;</div>
+        <div>
+          <h3>Local to Peoria — Not a Storm Chaser</h3>
+          <p>We know Peoria — the January deep freezes, the Illinois River spring flooding, the older housing stock in Peoria Heights and Chillicothe. Storm chasers come in after a disaster and leave. We're here year-round.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">&#127981;</div>
+        <div>
+          <h3>Free On-Site Estimate with Moisture Readings</h3>
+          <p>Contractors assess the damage on-site, take moisture readings with professional meters, and provide a clear scope of work before any work begins. No surprise costs, no pressure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lead form -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Get Help Now</div>
+    <h2 class="section-title">Request a Free Estimate</h2>
+    <p class="section-body">For emergencies, call <a href="tel:3095550100" style="color:var(--orange-dark);font-weight:700;">(309) 555-0100</a> directly. For non-emergency estimates, fill in the form below.</p>
+
+    <div style="max-width:560px; margin:0 auto;">
+      <form id="home-lead-form" action="https://media.simaroa.com/api/media/leads" method="POST">
+        <div class="form-group">
+          <label for="h-name">Full Name *</label>
+          <input type="text" id="h-name" name="name" placeholder="Jane Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="h-phone">Phone Number *</label>
+          <input type="tel" id="h-phone" name="phone" placeholder="(309) 555-1234" required>
+        </div>
+        <div class="form-group">
+          <label for="h-service">Type of Damage *</label>
+          <select id="h-service" name="service" required>
+            <option value="">Select...</option>
+            <option value="burst-pipe">Burst pipe / frozen pipe</option>
+            <option value="basement-flooding">Basement flooding</option>
+            <option value="appliance-failure">Appliance failure (dishwasher, washer, water heater)</option>
+            <option value="sewage-backup">Sewage backup / toilet overflow</option>
+            <option value="roof-leak">Roof leak / storm damage</option>
+            <option value="mold">Mold from past water damage</option>
+            <option value="commercial">Commercial property</option>
+            <option value="other">Other / not sure</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="h-insurance">Insurance Carrier (optional)</label>
+          <input type="text" id="h-insurance" name="insurance" placeholder="e.g. State Farm, Pekin Insurance, Country Financial, self-pay">
+        </div>
+        <div class="form-group">
+          <label for="h-message">Brief Description (optional)</label>
+          <textarea id="h-message" name="message" placeholder="When did it happen? How much standing water? What rooms are affected?"></textarea>
+        </div>
+        <input type="hidden" name="site" value="peoria-water">
+        <button type="submit" class="btn-submit">&#128680; Request Emergency Estimate &rarr;</button>
+      </form>
+
+      <div class="disclaimer">
+        For active water damage emergencies, call <strong>(309) 555-0100</strong> directly — do not wait for a form response.
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const hForm = document.getElementById('home-lead-form')
+  hForm.addEventListener('submit', async function(e) {
+    e.preventDefault()
+    const btn = hForm.querySelector('.btn-submit')
+    btn.textContent = 'Sending...'
+    btn.disabled = true
+    try {
+      const data = Object.fromEntries(new FormData(hForm))
+      const res = await fetch(hForm.action, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+      })
+      if (res.ok) {
+        hForm.innerHTML = '<div style="text-align:center;padding:40px 20px;"><div style="font-size:2rem;margin-bottom:16px;">&#x2705;</div><h3 style="color:var(--blue-dark);font-size:1.2rem;margin-bottom:8px;">Request received.</h3><p style="color:var(--muted);font-size:.95rem;">We\'ll be in touch shortly. For emergencies call <a href="tel:3095550100" style="color:var(--orange-dark);font-weight:700;">(309) 555-0100</a>.</p></div>'
+      } else {
+        btn.textContent = 'Request Emergency Estimate \u2192'
+        btn.disabled = false
+        alert('Something went wrong. Please call (309) 555-0100.')
+      }
+    } catch {
+      btn.textContent = 'Request Emergency Estimate \u2192'
+      btn.disabled = false
+      alert('Something went wrong. Please call (309) 555-0100.')
+    }
+  })
+</script>
+
+<!-- CTA -->
+<section class="emergency-cta">
+  <div class="container">
+    <h2>&#128680; Active Water Damage? Call Now.</h2>
+    <p>Every hour matters. Same-day response — 24/7/365.</p>
+    <a href="tel:3095550100" class="btn-dark">&#128222; (309) 555-0100 — Call Now</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col footer-nap">
+      <h4>Peoria Water Damage Restoration</h4>
+      <p><strong>Phone:</strong> (309) 555-0100</p>
+      <p><strong>Area:</strong> Peoria, IL</p>
+      <p><strong>Hours:</strong> 24/7 Emergency Service</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="/services.html">Water Extraction</a>
+      <a href="/services.html">Structural Drying</a>
+      <a href="/services.html">Basement Flooding</a>
+      <a href="/services.html">Sewage Cleanup</a>
+      <a href="/services.html">Mold Remediation</a>
+      <a href="/services.html">Insurance Claims</a>
+    </div>
+    <div class="footer-col">
+      <h4>Service Area</h4>
+      <p>Peoria, IL</p>
+      <p>East Peoria, IL</p>
+      <p>Pekin, IL</p>
+      <p>Morton, IL</p>
+      <p>Chillicothe, IL</p>
+      <p>Dunlap, IL</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/contact.html">Free Estimate</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p style="font-size:.75rem;color:#94a3b8;margin:0 0 8px;">PeoriaWaterDamage.net is a referral service connecting homeowners with independent local restoration contractors.</p>
+    <span>&copy; 2026 Peoria Water Damage Restoration &mdash; Peoria, IL</span>
+    <span>IICRC Certified &middot; Licensed &amp; Insured &middot; Insurance Approved</span>
+  </div>
+</footer>
+
+<!-- AI Chat Widget -->
+<script src="https://api.peoriawaterdamage.net/widget.js" data-site="2"></script>
+</body>
+</html>
