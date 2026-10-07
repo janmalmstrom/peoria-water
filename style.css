@@ -237,7 +237,7 @@ nav a:hover, nav a.active { color: #fff; border-bottom-color: var(--orange); }
 .article-silo-label { font-size: .78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--orange); margin-bottom: .4rem; }
 article h1 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; margin-bottom: 1.25rem; }
 article h2 { font-size: 1.2rem; font-weight: 700; margin: 1.75rem 0 .6rem; color: var(--blue-dark); }
-article p, article li { font-size: .97rem; color: var(--muted); line-height: 1.7; }
+article p, article li { font-size: 1.0625rem; color: var(--muted); line-height: 1.85; }
 article ul, article ol { padding-left: 1.3rem; margin-bottom: 1rem; }
 article li { margin-bottom: .4rem; }
 
