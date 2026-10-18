@@ -295,6 +295,9 @@ article li { margin-bottom: .4rem; }
 .faq-breadcrumb a { color: var(--blue); text-decoration: none; }
 .faq-header { margin-bottom: 1.5rem; }
 .faq-category { font-size: .78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--orange); margin-bottom: .4rem; }
+.article-byline { font-size: .875rem; color: #64748b; margin-top: .4rem; margin-bottom: 0; }
+.article-byline a { color: #0284c7; text-decoration: none; font-weight: 600; }
+.article-byline a:hover { text-decoration: underline; }
 
 
 /* ── FAQ Card Grid ─────────────────────────────────────── */
