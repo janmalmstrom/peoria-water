@@ -108,5 +108,10 @@
     "slug": "should-i-call-my-insurance-company-or-a-water-damage-company-first",
     "question": "Should I call my insurance company or a water damage company first?",
     "silo": 1
+  },
+  {
+    "slug": "what-equipment-is-used-to-dry-out-a-house-after-water-damage",
+    "question": "What equipment is used to dry out a house after water damage?",
+    "silo": 2
   }
 ]
