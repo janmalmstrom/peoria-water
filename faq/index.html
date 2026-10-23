@@ -79,8 +79,18 @@
   ]
 }
   </script>
-  <script async src='https://www.googletagmanager.com/gtag/js?id=G-N01CK50Q1N'></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-N01CK50Q1N');</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N01CK50Q1N');
+    window.addEventListener('load', function() {
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-N01CK50Q1N';
+      s.async = true;
+      document.head.appendChild(s);
+    });
+  </script>
   
   <style>
     .faq-grid{grid-template-columns:repeat(3,1fr)!important}
@@ -235,7 +245,7 @@
         <div class="faq-card" data-silo="water-extraction-structural-drying">
           <div class="faq-card-cat">Water Extraction & Structural Drying</div>
           <a href="/faq/what-equipment-is-used-to-dry-out-a-house-after-water-damage/">What equipment is used to dry out a house after water damage?</a>
-          <div class="faq-card-date">Oct 22, 2026</div>
+          <div class="faq-card-date">Oct 23, 2026</div>
         </div>
       </div>
 
@@ -251,13 +261,13 @@
 <footer class='site-footer'>
   <div class='footer-inner'>
     <div class='footer-col footer-nap'>
-      <h4>Peoria Water Damage Restoration</h4>
+      <h3>Peoria Water Damage Restoration</h3>
       <p><strong>Phone:</strong> (309) 555-0100</p>
       <p><strong>Area:</strong> Peoria, IL</p>
       <p><strong>Hours:</strong> 24/7 Emergency Service</p>
     </div>
     <div class='footer-col'>
-      <h4>Services</h4>
+      <h3>Services</h3>
       <a href='/services.html'>Water Extraction</a>
       <a href='/services.html'>Structural Drying</a>
       <a href='/services.html'>Sewage Cleanup</a>
@@ -265,7 +275,7 @@
     </div>
 
     <div class='footer-col'>
-      <h4>Quick Links</h4>
+      <h3>Quick Links</h3>
       <a href='/'>Home</a>
       <a href='/services.html'>Services</a>
       <a href='/faq/'>FAQ</a>
